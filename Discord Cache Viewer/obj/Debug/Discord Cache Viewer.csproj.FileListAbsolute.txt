@@ -1,0 +1,6 @@
+C:\Users\01tie001\RiderProjects\Discord Cache Viewer\Discord Cache Viewer\bin\Debug\Discord_Cache_Viewer.exe
+C:\Users\01tie001\RiderProjects\Discord Cache Viewer\Discord Cache Viewer\bin\Debug\Discord_Cache_Viewer.pdb
+C:\Users\01tie001\RiderProjects\Discord Cache Viewer\Discord Cache Viewer\obj\Debug\Discord Cache Viewer.csprojAssemblyReference.cache
+C:\Users\01tie001\RiderProjects\Discord Cache Viewer\Discord Cache Viewer\obj\Debug\Discord Cache Viewer.csproj.CoreCompileInputs.cache
+C:\Users\01tie001\RiderProjects\Discord Cache Viewer\Discord Cache Viewer\obj\Debug\Discord_Cache_Viewer.exe
+C:\Users\01tie001\RiderProjects\Discord Cache Viewer\Discord Cache Viewer\obj\Debug\Discord_Cache_Viewer.pdb
