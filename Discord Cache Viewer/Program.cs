@@ -23,9 +23,6 @@ namespace Discord_Cache_Viewer
             Console.WriteLine("Processed all files, closing in 10 seconds");
             // Wait a few seconds before closing
             await Task.Delay(kill);
-            // Collect the garbage and close
-            GC.Collect();
-            Environment.Exit(0);
         }
 
         /// <summary>
@@ -39,16 +36,17 @@ namespace Discord_Cache_Viewer
             // Constants for more efficient memory management
             const string header = "PNG", extension = ".png";
             const ushort index = 0;
-            for (ushort i = 0; i < files.Length; i++)
+            for (int i = 0; i < files.Length; i++)
             {
                 // Cache the file path
                 var filePath = files[i];
                 // We only have to read the first line and check if it has the PNG header.
                 // This also saves some processing time, as we don't have to check the entire file for "PNG", and it reduces false positives.
-                if (File.ReadAllLines(filePath)[index].Contains(header))
+                if (File.ReadAllLines(filePath)[index].Contains(header)) {
                     Console.WriteLine($"{filePath} - Added {extension} extension");
-                // "Move" => "Rename", alright then Microsoft.
-                File.Move(filePath, filePath + extension);
+                    // "Move" => "Rename", alright then Microsoft.
+                    File.Move(filePath, filePath + extension);
+                }
             }
         }
     }
