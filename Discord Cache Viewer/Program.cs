@@ -36,7 +36,7 @@ namespace Discord_Cache_Viewer
             // Constants for more efficient memory management
             const string header = "PNG", extension = ".png";
             const ushort index = 0;
-            for (int i = 0; i < files.Length; i++)
+            for (var i = 0; i < files.Length; i++)
             {
                 // Cache the file path
                 var filePath = files[i];
